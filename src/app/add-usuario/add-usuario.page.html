@@ -7,7 +7,43 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">add-usuario</ion-title>
+      <ion-title size="sm=">Adicionar Usuário</ion-title>
     </ion-toolbar>
   </ion-header>
+</ion-content>
+
+<ion-content id="container">
+  <ion-item>
+    <ion-label>Id. Usuário</ion-label>
+    <ion-input placeholder="---" [(ngModel)]="idusuario"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Nome</ion-label>
+    <ion-input placeholder="Nome" [(ngModel)]="nome"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>CPF</ion-label>
+    <ion-input placeholder="CPF"  [(ngModel)]="cpf"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Número da CNH</ion-label>
+    <ion-input placeholder="Num. CNH"  [(ngModel)]="num_CNH"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Validade</ion-label>
+    <ion-input placeholder="XX/XX/XXXX"  [(ngModel)]="validade_CNH"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Telefone</ion-label>
+    <ion-input placeholder="(XX) XXXXX-XXXX" [(ngModel)]="telefone"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>E-mail</ion-label>
+    <ion-input placeholder="nome@email.com" [(ngModel)]="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <div class="botao">
+      <ion-button size="large" shape="round" >Adicionar</ion-button>
+    </div>
+  </ion-item>
 </ion-content>
