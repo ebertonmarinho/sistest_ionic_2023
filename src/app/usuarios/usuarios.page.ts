@@ -18,4 +18,8 @@ export class UsuariosPage implements OnInit {
     this.router.navigate([''])
   }
 
+  gotoAddUsuario(){
+    this.router.navigate(['\add-usuario'])
+  }
+
 }
