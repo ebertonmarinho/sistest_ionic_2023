@@ -4,7 +4,7 @@ import { map } from 'rxjs';
 
 @Injectable()
 export class Api{
-    server: string = 'http://10.40.4.40/apisistest/';
+    server: string = 'http://localhost/apisistest/';
 
     constructor(private http : HttpClient){
        

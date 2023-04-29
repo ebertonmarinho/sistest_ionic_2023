@@ -9,8 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { Api } from '../services/api';
 import { HttpClientModule } from '@angular/common/http';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
-import { map } from 'rxjs';
 
 @NgModule({
   declarations: [AppComponent],

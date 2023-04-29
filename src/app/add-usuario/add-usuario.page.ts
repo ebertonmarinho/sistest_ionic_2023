@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Api } from '../../services/api';
-import { promises } from 'dns';
 
 @Component({
   selector: 'app-add-usuario',
@@ -10,8 +9,8 @@ import { promises } from 'dns';
 })
 export class AddUsuarioPage implements OnInit {
   
-  nome: string = "";
   idusuario: string = "";
+  nome: string = "";
   cpf : string = "";
   num_CNH : string = "";
   validade_CNH : string = "";
@@ -46,15 +45,7 @@ export class AddUsuarioPage implements OnInit {
       }
       this.provider.dadosApi(dados, 'inserir.php').subscribe(
         (data : any) => {
-          //console.log(data['mensagem']);
-          if(data['erro'] == 0){
-            //this.mensagemSucesso(data['mensagem']);
-            //this.router.navigate(['usuarios']);
-            //this.limparCampos();
-          }
-          if(data['erro'] == 1){
-            //this.mensagemErro(data['mensagem']);
-          }
+          console.log("Usuário Adicionado com Sucesso");
         }
       );
     });
