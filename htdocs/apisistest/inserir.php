@@ -1,16 +1,16 @@
 <?php
-require_once('../cnn.php');
+require_once('cnn.php');
 $postjson = json_decode(file_get_contents('php://input'), true);
 
 # Variáveis que vão ser utilizadas para pegar as 
 # informações do usuário
-$idusuario = $postjson['idUsuario'];
+$idusuario = $postjson['idusuario'];
 $nome = $postjson['nome'];
 $cpf = $postjson['cpf'];
 $num_CNH = $postjson['num_CNH'];
 $validade_CNH = $postjson['validade_CNH'];
 $telefone = $postjson['telefone'];
-$email =  = $postjson['email'];
+$email = $postjson['email'];
 
 # Algoritmos de validação dos dados
 if ($nome == "") {
